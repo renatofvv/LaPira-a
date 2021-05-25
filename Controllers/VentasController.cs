@@ -1,13 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 namespace LaPira_a.Controllers
 {
-    public class CompraController : Controller
+    public class VentasController : Controller
     {
-        public IActionResult ResumenCompra()
+        public IActionResult Servicios()
         {
             return View();
         }
-        public IActionResult PagarCompra()
+        public IActionResult Productos()
         {
             return View();
         }
