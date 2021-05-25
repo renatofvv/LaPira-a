@@ -18,16 +18,34 @@ namespace LaPira_a.Controllers
             _logger = logger;
         }
 
+        //quienes somos
         public IActionResult Index()
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        //servicios y productos
+        public IActionResult Servicios()
         {
             return View();
         }
-       
+        //contacto
+        public IActionResult Contacto()
+        {
+            return View();
+        }
+
+        //pagina que recibe al contacto
+        [HttpPost]
+        public IActionResult Contacto(string datos)
+        {
+            return View();
+        }
+        //contancto de confirmacion
+        public IActionResult ContactoConfirmacion()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
